@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yvi Fotografie – natürliche Portraits, Familiengeschichten und warme Golden-Hour-Momente in Köln und Umgebung.">
+  <meta name="description" content="YVN.J by Yvonne Jakobi – editoriale, dokumentarische Fotografie für Familien, Paare und Portraits.">
   <meta name="theme-color" content="#f3efe7">
-  <title>Yvi Fotografie — Echte Momente im schönsten Licht</title>
+  <title>YVN.J by Yvonne Jakobi — Für das, was bleibt.</title>
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 </head>
@@ -14,24 +14,18 @@
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
   <header class="site-header" data-header>
-    <a class="brand" href="#home" aria-label="Yvi Fotografie Startseite">
-      <span class="brand__mark">Y</span>
-      <span class="brand__name">Yvi <i>Fotografie</i></span>
+    <a class="brand" href="#home" aria-label="YVN.J by Yvonne Jakobi – Startseite">
+      <span class="brand__name">Y V N . J</span>
+      <span class="brand__byline">BY YVONNE JAKOBI</span>
     </a>
 
     <nav class="nav" aria-label="Hauptnavigation" data-nav>
       <a href="#portfolio">Portfolio</a>
-      <a href="#angebot">Angebot</a>
-      <a href="#ueber-mich">Über mich</a>
+      <a href="#ueber-mich">Yvonne</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
 
     <div class="header-actions">
-      <button class="theme-toggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln" data-theme-toggle>
-        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
-        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"/></svg>
-      </button>
-      <a class="header-cta" href="#kontakt">Shooting anfragen <span>↗</span></a>
       <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" data-menu-toggle>
         <span></span><span></span>
       </button>
@@ -40,35 +34,14 @@
 
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
+      <picture class="hero__visual" data-parallax>
+        <source type="image/webp" srcset="images/yvnj-hero-768.webp 768w, images/yvnj-hero-1280.webp 1280w, images/yvnj-hero-2048.webp 2048w" sizes="100vw">
+        <img src="images/yvnj-hero-original.jpg" alt="Ein Vater und seine Tochter bedienen gemeinsam einen Greifautomaten auf dem Jahrmarkt." width="2048" height="1366" fetchpriority="high" decoding="async">
+      </picture>
       <div class="hero__copy">
-        <p class="eyebrow reveal">Portrait · Familie · Golden Hour</p>
-        <h1 id="hero-title" class="reveal reveal--delay-1">Echte Nähe.<br><em>Sanftes Licht.</em><br>Für immer.</h1>
-        <p class="hero__intro reveal reveal--delay-2">Fotografie für die leisen, wilden und wunderbar unperfekten Augenblicke dazwischen.</p>
-        <div class="hero__actions reveal reveal--delay-3">
-          <a class="button button--primary" href="#portfolio">Geschichten entdecken <span>↓</span></a>
-          <a class="text-link" href="#kontakt">Deinen Moment planen <span>↗</span></a>
-        </div>
-        <div class="hero__note reveal reveal--delay-3">
-          <span class="hero__note-line"></span>
-          <p>Natürlich. Warm.<br>Ganz bei euch.</p>
-        </div>
+        <h1 id="hero-title">Für das, was<br>bleibt.</h1>
+        <a class="scroll-cue" href="#intro" aria-label="Weiter zum nächsten Abschnitt"><span></span><span class="scroll-cue__label">Scroll</span></a>
       </div>
-
-      <div class="hero__visual reveal reveal--delay-1" data-parallax>
-        <div class="hero__image-wrap">
-          <img src="images/golden-field.jpg" alt="Kind im rosafarbenen Kleid in einem Feld im warmen Abendlicht" fetchpriority="high">
-        </div>
-        <div class="hero__badge" aria-hidden="true">
-          <svg viewBox="0 0 120 120">
-            <defs><path id="circlePath" d="M60,60 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs>
-            <text><textPath href="#circlePath">YVI FOTOGRAFIE · ECHTE MOMENTE · </textPath></text>
-          </svg>
-          <span>✦</span>
-        </div>
-        <p class="hero__caption"><b>01</b> Sommerabend<br>Köln, 2026</p>
-      </div>
-
-      <a class="scroll-cue" href="#intro" aria-label="Weiter zum nächsten Abschnitt"><span></span> Scroll</a>
     </section>
 
     <div class="marquee" aria-label="Fotografie-Schwerpunkte">
@@ -235,11 +208,11 @@
 
   <footer class="footer">
     <div class="footer__top">
-      <a class="brand brand--footer" href="#home"><span class="brand__mark">Y</span><span class="brand__name">Yvi <i>Fotografie</i></span></a>
+      <a class="brand brand--footer" href="#home"><span class="brand__name">Y V N . J</span><span class="brand__byline">BY YVONNE JAKOBI</span></a>
       <div class="footer__links"><a href="#portfolio">Portfolio</a><a href="#angebot">Angebot</a><a href="#ueber-mich">Über mich</a><a href="#kontakt">Kontakt</a></div>
-      <a class="footer__social" href="#" aria-label="Instagram-Profil von Yvi Fotografie">Instagram <span>↗</span></a>
+      <a class="footer__social" href="#" aria-label="Instagram-Profil von YVN.J by Yvonne Jakobi">Instagram <span>↗</span></a>
     </div>
-    <div class="footer__bottom"><p>© <span data-year></span> Yvi Fotografie</p><p>Köln & Umgebung</p><div><a href="#">Impressum</a><a href="#">Datenschutz</a></div></div>
+    <div class="footer__bottom"><p>© <span data-year></span> YVN.J by Yvonne Jakobi</p><p>Köln & Umgebung</p><div><a href="#">Impressum</a><a href="#">Datenschutz</a></div></div>
   </footer>
 
   <dialog class="lightbox" data-lightbox aria-label="Großansicht des Fotos">

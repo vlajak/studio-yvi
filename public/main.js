@@ -14,8 +14,9 @@ function updateOnScroll() {
   if (progressBar) progressBar.style.transform = `scaleX(${progress})`;
 
   const parallax = document.querySelector('[data-parallax] img');
-  if (parallax && y < window.innerHeight * 1.2 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    parallax.style.setProperty('--parallax', `${-5 + y * 0.018}%`);
+  if (parallax && y < window.innerHeight * 1.1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const shift = Math.min(y * 0.035, window.innerHeight * 0.035);
+    parallax.style.setProperty('--hero-shift', `${shift}px`);
   }
 }
 
@@ -40,17 +41,6 @@ menuToggle?.addEventListener('click', () => {
 
 nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 window.addEventListener('resize', () => { if (window.innerWidth > 1050) closeMenu(); });
-
-// Light / dark editorial palette.
-const themeToggle = document.querySelector('[data-theme-toggle]');
-const savedTheme = localStorage.getItem('yvi-theme');
-if (savedTheme === 'dark') body.dataset.theme = 'dark';
-
-themeToggle?.addEventListener('click', () => {
-  const dark = body.dataset.theme !== 'dark';
-  body.dataset.theme = dark ? 'dark' : 'light';
-  localStorage.setItem('yvi-theme', dark ? 'dark' : 'light');
-});
 
 // Reveal elements as they enter the viewport.
 const revealObserver = new IntersectionObserver((entries, observer) => {
