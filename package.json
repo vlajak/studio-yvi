@@ -4,6 +4,7 @@
   "private": true,
   "description": "Portfolio-Website für Yvi Fotografie",
   "scripts": {
+    "build": "node build.js",
     "start": "node server.js"
   },
   "engines": {
